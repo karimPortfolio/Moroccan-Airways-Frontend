@@ -1,0 +1,290 @@
+
+
+.msg_bar
+{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 25px;
+}
+
+.msg_bar div
+{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color1);
+    border-radius: 50%;
+    position: fixed;
+    top: 87%;
+    z-index: 300;
+}
+
+.msg_bar div svg
+{
+    font-size: 35px;
+    color: #FFFF;
+}
+
+.closeMsgBar
+{
+    animation-name: closeBtnAnim;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes closeBtnAnim{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.msg_inbox
+{
+    width: 360px;
+    min-height: 510px;
+    background-color: #c4c1c1;
+    position: fixed;
+    top: 19%;
+    z-index: 400;
+}
+
+.msg_inbox_close
+{
+    display: none;
+}
+
+
+.inbox_head
+{
+    background-color: var(--main-color1);
+}
+
+.inbox_head h5
+{
+    font-size: 16px;
+}
+
+.inbox_head p
+{
+    font-size: 13px;
+}
+
+.onlineIcon svg
+{
+    font-size: 10px;
+    color: green;
+}
+
+.inbox_head div:first-child
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inbox_head div:first-child img
+{
+    width: 40px;
+    height: 25px;
+}
+
+.inbox_body
+{
+    height: 370px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.inbox_body div:first-child span
+{
+    border-radius: 20px;
+    background-color: #e6e6e6ee;
+    font-size: 13px;
+}
+
+.chatLogo
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--main-color2);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatLogo img
+{
+    width: 22px;
+    height: 16px;
+}
+
+.chatBot_texts,
+.chatUser_texts
+{
+    padding: 10px;
+    background-color: #FFFF;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+}
+
+.chatUser_texts
+{
+    background-color: #3d3d3d !important;
+    color: #FFFF;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+    width: fit-content !important;
+    padding:10px;
+}
+
+.chatBot_texts span,
+.chatUser_texts span
+{
+    background-color: transparent !important;
+    font-size: 11px !important;
+    color: #a8a8a8 !important;
+}
+
+.chatBot_texts p,
+.chatUser_texts p
+{
+    font-size: 14px;
+}
+
+.inbox_footer
+{
+    background-color: #FFFF;
+    margin-top: auto;
+}
+
+.inbox_footer div p
+{
+    font-size: 11px;
+    color: #777;
+    position: relative;
+}
+
+/* .inbox_footer div p::after
+{
+    content: '';
+    background-color: #777;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    opacity: .2;
+} */
+
+.inbox_footer div p a
+{
+    color: var(--main-color1);
+    text-decoration: none;
+}
+
+.inbox_footer input
+{
+    border: 0;
+    outline: 0 !important;
+    width: 87%;
+}
+
+.sendMsg
+{
+    width: 35px !important;
+    height: 35px !important;
+    padding: 3px;
+    border-radius: 50% !important;
+    background-color: var(--main-color1) !important;
+    color: #FFFF;
+}
+
+.sendMsg svg
+{
+    font-size: 19px;
+}
+
+.userChatLoad span
+{
+    position: relative;
+}
+
+.userChatLoad span::after
+{
+    content: '';
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: userChatLoadAnim;
+    animation-duration: 1s;
+    margin: 10px;
+}
+.userChatLoad span:nth-child(1)::after
+{
+    animation-delay:.3s;
+}
+.userChatLoad span:nth-child(2)::after
+{
+    animation-delay:.6s;
+}
+.userChatLoad span:nth-child(3)::after
+{
+    animation-delay:.9s;
+}
+
+@keyframes userChatLoadAnim
+{
+    0%{
+        transform:translate(0 , 5px);
+    }
+
+    100%{
+        transform:translate(0 , 0);
+    }
+}
+
+@media (max-width:554px)
+{
+    .msg_bar
+    {
+        padding-right: 15px;
+    }
+    .msg_bar div
+    {
+        width: 55px;
+        height: 55px;
+        top: 90%;
+    }
+    .msg_bar div svg{
+        font-size: 25px;
+    }
+    .msg_inbox
+    {
+        top: 23%;
+    }
+}
+
+@media (max-width:410px)
+{
+    .msg_inbox
+    {
+        width:90%;
+        top: 14%;
+        left:20px;
+    }
+}
+

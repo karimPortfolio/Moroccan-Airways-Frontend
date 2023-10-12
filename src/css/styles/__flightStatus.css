@@ -1,0 +1,68 @@
+
+
+.flightStatusCompIntro
+{
+    height: 450px;
+    background: url(../../images/signupBg.jpeg);
+    background-size:cover;
+    object-fit: cover;
+    position: relative;
+    z-index: -200;
+}
+
+.flightStatusCompIntro::after
+{
+    content: '';
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index: -1;
+}
+
+.flightStatusCompIntro h1
+{
+    font-size: 70px;
+    z-index: 200;
+}
+
+.flightStatusComp span
+{
+    color: var(--main-color1);
+}
+
+.flightStatRes
+{
+    /* background-color: var(--main-color2); */
+    width: 70%;
+}
+
+.flightStatRes h4
+{
+    background-color: var(--main-color2);
+    padding: 20px;
+}
+
+
+@media (max-width:776px)
+{
+    .flightStatusCompIntro h1
+    {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:554px)
+{
+    .flightStatusCompIntro h1
+    {
+        font-size: 44px;
+    }
+    .flightStatRes
+    {
+        width: 95%;
+    }
+}

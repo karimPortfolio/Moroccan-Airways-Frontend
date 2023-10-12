@@ -1,0 +1,161 @@
+:root{
+    --main-color3:#969696;
+    --white:#FFFF;
+    --black:#000;
+    --transition:all .5s ease-in-out;
+    --fontFamily1:'Roboto' , sans-serif ;
+}
+
+
+.offers
+{
+    min-height: 680px;
+    background: url(../../images/Screenshot\ 2023-02-02\ at\ 13.11.46.png);
+    background-size: cover;
+    object-fit: cover;
+    background-position: middle;
+}
+
+.offers h3
+{
+    color: var(--main-color3);
+}
+
+.offers h1
+{
+    color: var(--main-color1);
+    font-family: var(--fontFamily2);
+    font-weight: bold;
+}
+
+.offersCards div
+{
+    background-color: var(--white);
+    box-sizing: border-box !important;
+}
+
+.offersCards h5
+{
+    color: var(--main-color3);
+}
+
+.offersCards h4
+{
+    position: relative;
+}
+
+.offersCards h4::after
+{
+    content: '';
+    width:70px;
+    height: 2px;
+    background-color: var(--main-color1);
+    position: absolute;
+    top: 30px;
+    left: 35%;
+}
+.offersCards img
+{
+    height: 85% !important;
+}
+
+.moffers_carousel_btn_next,
+.moffers_carousel_btn_prev
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 0 solid transparent;
+    box-shadow: 0px 0px 8px 0px #00000031;
+    font-size: 22px;
+    color: var(--main-color1);
+}
+
+.testimonials_content2
+{
+    position: relative;
+}
+
+.testimonials_content2 img
+{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.moreOfferP1
+{
+    background: url(../../images/dubaiDiscover.jpeg);
+    background-size: cover;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 5px;
+    position: relative;
+    transition:var(--transition);
+}
+.moreOfferP2
+{
+    background: url(../../images/swissDiscover.jpeg);
+    background-size: cover;
+    object-fit: cover;
+    height: 400px;
+    border-radius: 5px;
+    position: relative;
+    transition:var(--transition);
+}
+
+.moreOfferP1:hover::after,
+.moreOfferP2:hover::after
+{
+    opacity: 0.5;
+}
+.moreOfferP1:hover,
+.moreOfferP2:hover
+{
+    transform: scale(1.1);
+}
+
+.moreOfferP1::after,
+.moreOfferP2::after
+{
+    content: '';
+    background-color: #000;
+    background: linear-gradient(167deg,#00000018 25%,#000000c8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+}
+
+.moreOfferP1 h5,
+.moreOfferP1 h1,
+.moreOfferP2 h5,
+.moreOfferP2 h1,
+.moreOfferP1 p,
+.moreOfferP2 p
+{
+    z-index: 50;
+    
+}
+
+.moreOfferP1 p,
+.moreOfferP2 p
+{
+    font-family: 'DM sans' , sans-serif;
+    font-weight: 500;
+}
+
+
+@media (max-width:992px)
+{ 
+    .offersCards h4::after
+    {
+        display:none;
+    }
+
+}

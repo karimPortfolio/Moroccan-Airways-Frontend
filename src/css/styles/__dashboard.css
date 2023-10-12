@@ -1,0 +1,271 @@
+
+
+
+.dashboard-header div a img
+{
+    width: 63px;
+    width: 63px;
+}
+
+.dashboard-header .nav-content .firstLi
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    transition: all .5ms ease-in-out;
+}
+
+.dashboard-header .nav-content .firstLi:hover
+{
+    background-color: #c2c2c2;
+}
+
+.dashboard-header .nav-content .dropdown-menu
+{
+    width: 400px;
+    max-height: 560px !important;
+    overflow-y: scroll !important;
+}
+
+.dashboard-access-menu
+{
+    background-color: #e1e1e1bd;
+    height:calc(100vh - 71px) ;
+}
+
+.dashboard-access-menu .active h5
+{
+    color: var(--main-color1);
+}
+
+.dashboard-access-menu div
+{
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.dashboard-access-menu .active
+{
+    border-left: 5px solid var(--main-color1);
+    background-color: #bc8aa87e;
+}
+
+.dashboard-access-menu div:hover
+{
+    border-left: 5px solid var(--main-color1);
+    background-color: #bc8aa87e;
+}
+
+.dashboard-access-menu div:hover h5
+{
+    color: var(--main-color1);
+}
+
+.dashboard-access-menu span svg
+{
+    font-size: 25px;
+    color: var(--main-color1);
+}
+
+.dashboardRes,
+.dashboardHome
+{
+    height: calc(100vh - 71px);
+    overflow-y: scroll;
+}
+
+.dashboardRes h2
+{
+    color: var(--main-color1);
+}
+
+.dashboardResCards
+{
+    background-color: var(--main-color2);
+}
+
+.dashboardResCards .cardHead
+{
+    background-color: #ffaedf;
+}
+
+.dashboardResCards div span
+{
+    color: var(--main-color1);
+}
+
+.dashboardResCards .bookInf
+{
+    font-weight: bold;
+    color: var(--main-color1);
+}
+
+.dashboardAds .first_ad
+{
+    border-radius: 8px;
+    width: 98%;
+    height: 400px;
+    background-image: url(../../images/dashboardAds.png);
+    background-size: cover;
+}
+
+.dashboardAds .first_ad h5
+{
+    font-size: 35px;
+}
+.dashboardAds .first_ad p
+{
+    font-size: 18px;
+    width: 40%;
+}
+.dashboardAds .first_ad button,
+.dashboardResCards .cancelRes button,
+.dashboardResCards .confirmCancelBtn
+{
+    background-color: var(--main-color1);
+    border: transparent;
+    color: #FFFF;
+}
+
+
+
+.dashboardResCards .modal .modal-content
+{
+    background-color: var(--main-color2);
+}
+
+.dashboardResCards .modal .modal-title
+{
+    color: var(--main-color1);
+}
+
+
+.dashboardExpireModal
+{
+    position: absolute;
+    top: 40%;
+}
+
+.notification-dropdown h4
+{
+    color: var(--main-color1);
+}
+
+.notification-dropdown .badge
+{
+    background-color: var(--main-color1) !important;
+    height: fit-content !important;
+}
+
+.notification-dropdown .notification-title
+{
+    font-weight: 600;
+    font-size: 16px;
+    word-wrap: break-word !important; /* For legacy browsers */
+    overflow-wrap: break-word !important;
+    white-space: pre-wrap;
+}
+
+.notification-dropdown .notification-content
+{
+    font-size: 13px;
+    word-wrap: break-word !important; /* For legacy browsers */
+    overflow-wrap: break-word !important;
+    white-space: pre-wrap;
+}
+.notification-dropdown .notification-timer
+{
+    font-size: 12px;
+    color: #898989;
+}
+
+.notification-dropdown .dropdown-item
+{
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.welcoming_text span
+{
+    color: var(--main-color1);
+}
+
+.dashboard-analytics .cards 
+{
+    padding: 15px;
+    background-color: var(--main-color2);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dashboard-analytics .cards h5
+{
+    font-size: 24px;
+}
+.dashboard-analytics .cards p
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dashboard-analytics .cards a
+{
+    font-size: 14px;
+    color: var(--main-color1);
+    text-decoration: none;
+}
+
+@media (max-width:776px)
+{
+    .dashboardAds .first_ad
+    {
+        height: auto !important;
+    }
+
+    .dashboardAds .first_ad p 
+    {
+        width: 80%;
+    }
+    .dashboardAds .first_ad
+    {
+        padding: 15px;
+    }
+}
+
+@media (max-width:450px)
+{
+    .notification-dropdown
+    {
+        width: 330px !important;
+        left: -10px !important;
+    }
+    .dashboardAds .first_ad p 
+    {
+        width: 95%;
+        font-size: 14px;
+    }
+    .dashboardAds .first_ad h5 
+    {
+        font-size: 23px;
+    }
+    .dashboardAds .first_ad
+    {
+        padding: 10px;
+    }
+
+    .dashboardResCards .card-head h5
+    {
+        font-size: 19px !important;
+    }
+
+}
+
+@media (max-width:340px)
+{
+    .notification-dropdown
+    {
+        width: 300px !important;
+        left: -7px !important;
+    }
+}

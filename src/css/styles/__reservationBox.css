@@ -1,0 +1,233 @@
+:root{
+    --main-color2:#feebf3;
+    --white:#FFFF;
+    --black:#000;
+    --transition:all .5s ease-in-out;
+    --fontFamily1:'Roboto' , sans-serif ;
+}
+
+
+
+.reservation__box
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation__box .res__box
+{
+    width: 86%;
+    min-height: 300px;
+    border-radius: 12px;
+    background-color: var(--main-color2);
+    position: relative;
+    top: -60px;
+    box-shadow: 0px 3px 7px 3px #0000001a;
+    padding-bottom: 20px;
+}
+
+.res__box button
+{
+    width: 50%;
+    height: 60px;
+    border: 0;
+    font-size: 20px;
+}
+
+.btn__book
+{
+    background-color: transparent;
+    color: var(--main-color1);
+}
+.btn_flightS
+{
+    border-top-left-radius: 12px;
+}
+.btn__bo
+{
+    border-top-right-radius: 12px;
+}
+.btn__flightStat
+{
+    background-color: var(--main-color1);
+    color: var(--white);
+}
+
+.css-10mg1vw-MuiStepper-root .Mui-active,
+.css-10mg1vw-MuiStepper-root .Mui-completed
+{
+    color: var(--main-color1) !important;
+}
+
+.MuiStepIcon-root
+{
+    color:#db85b8 !important;
+}
+
+.reserve__p1__select1,
+.reserve__p1__select2,
+.reserve__p1__select3,
+.reserve__p1__select4,
+.reserve__p1__select5{
+    width: 100%;
+}
+.reserve__p1__select1 label,
+.reserve__p1__select2 label,
+.reserve__p1__select3 label,
+.reserve__p1__select4 label,
+.reserve__p1__select5 label,
+.resr_date_input label
+{
+    color: var(--main-color1) !important;
+}
+.reserve__p1__select1 fieldset,
+.reserve__p1__select2 fieldset,
+.reserve__p1__select3 fieldset,
+.reserve__p1__select4 fieldset,
+.reserve__p1__select5 fieldset,
+.resr_date_input fieldset
+{
+    border: 0.6px solid var(--main-color1) !important;
+}
+
+.reserve__p1__select1 svg,
+.reserve__p1__select2 svg{
+    display: none;
+}
+
+.reserv__switch__icon
+{
+    color: var(--main-color1);
+    cursor: pointer;
+}
+
+
+
+/* .reser__depar__input div
+{
+    border-radius: 0 !important;
+}
+.reser__retur__input div
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.reserve__p1__select3 div
+{
+   border-top-right-radius: 0 !important;
+   border-bottom-right-radius: 0 !important;
+} */
+
+.pass__label,
+.clas__label
+{
+    font-family: "Work Sans" , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--main-color1);
+}
+
+.reserv__passng__clas
+{
+    transition: var(--transition);
+}
+
+.check__flight__title
+{
+    font-size: var(--fontFamily1);
+    font-size: 20px;
+    color: var(--main-color1);
+}
+
+.reserConfirmAlert
+{
+    width: 60%;
+}
+
+@media (max-width:992px)
+{
+    .css-11xur9t-MuiPaper-root-MuiTableContainer-root 
+    {
+        overflow-x: scroll !important;
+    }
+}
+
+@keyframes switchIconAnim
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width:776px)
+{
+    .css-11xur9t-MuiPaper-root-MuiTableContainer-root 
+    {
+        width: 85% !important;
+    }
+}
+
+@media (max-width:576px)
+{
+    .passngers__info
+    {
+        width: 100%;
+    }
+    .passngers__info div
+    {
+        width: 100%;
+    }
+
+    .reserve__p1__inputs2 div
+    {
+        width: 100% !important;
+    }
+    .reservation__box .res__box
+    {
+        width: 90%;
+    }
+    .reserConfirmAlert
+    {
+        width: 94% !important;
+    }
+
+    .css-11xur9t-MuiPaper-root-MuiTableContainer-root 
+    {
+        width: 94% !important;
+    }
+
+    .ReservConfirmDetails h5:first-child
+    {
+        font-size: 17px;
+        width: 100% !important;
+    }
+    
+}
+
+@media (max-width:410px)
+{
+    .btn__flightStat,
+    .btn__book
+    {
+        font-size:14px !important;
+    }
+}
+
+@media (max-width:338px)
+{
+    .reservation__box .res__box
+    {
+        width: 90%;
+    }
+    
+    .btn__book span,
+    .btn__flightStat span
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,308 @@
+:root{
+    --main-color1:#ac0068;
+    --white:#FFFF;
+    --black:#000;
+    --transition:all .5s ease-in-out;
+    --fontFamily1:'Roboto' , sans-serif ;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+.scrollChanges
+{
+    position: fixed;
+    background-color: #FFF;
+}
+
+
+.app__logo{
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.app__logo img{
+    width: 75px;
+    width: 75px;
+}
+/* .app__logo span{
+    color: var(--main-color1) !important;
+} */
+
+.logo__circle{
+    position: relative;
+}
+
+.logo__circle::after{
+    content:'';
+    width: 8px;
+    height: 8px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 2px;
+}
+
+.nav__links a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav__auth__links a:first-of-type{
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav__auth__links a:last-of-type{
+    background-color: var(--main-color1);
+    border:2px solid transparent;
+    width: 120px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.nav__auth__links a:last-of-type:hover
+{
+    background-color: transparent;
+    border:2px solid var(--main-color1);
+    color: var(--main-color1);
+}
+.scrollChanges .nav__links a,
+.scrollChanges .nav__auth__links a:first-of-type
+{
+    color: var(--black);
+}
+.scrollChanges .searchDes a
+{
+    color: var(--black) !important;
+}
+
+.actv__links{
+    position: relative;
+    transition: var(--transition);
+}
+.actv__links::after{
+    content: '';
+    background-color: var(--main-color1);
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    transition: var(--transition);
+}
+.actv__links:hover::after{
+    width: 100%;
+}
+.actv__links:hover{
+    color: var(--main-color1) !important;
+}
+
+.navlinksmob{
+    width:300px;
+    height: 100vh;
+    background-color: var(--main-color1);
+    position: absolute;
+    top: 0;
+    left:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: var(--transition);
+    box-shadow: 0px 0px 12px 0px #00000059;
+    z-index: 50000;
+}
+
+.navlinksmobClose{
+    width: 300px;
+    height: 100vh;
+    background-color: var(--main-color1);
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: var(--transition);
+    z-index: 50000;
+}
+
+.nav__close__btn{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    color: var(--white);
+}
+.nav__close__btn svg{
+    font-size: 30px;
+    transition: var(--transition);
+}
+
+.nav__close__btn svg:hover{
+    font-size:33px ;
+    cursor: pointer;
+    color: var(--main-color2);
+}
+
+.scrollChanges .hamburger__menu svg
+{
+    color: #000 !important;
+}
+
+.search__box a{
+    color: #000 !important;
+    position: absolute;
+    left:172px;
+} 
+
+.nav__Mob_search{
+    position: relative;
+    top: -120px;
+}
+
+.searchBoxDesktop
+{
+    display: none;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 82px;
+    background-color: #fff;
+    opacity: 1;
+    left: 0;
+    transition: var(--transition);
+}
+.searchBoxDesktop h3
+{
+    color: var(--main-color3);
+    font-family: var(--fontFamily1);
+    font-size: 40px;
+}
+
+.searchBoxDesktop::after
+{
+    content: '';
+    width: 100%;
+    height: 1500px;
+    background-color: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0.5;
+    z-index: -1;
+}
+
+.searshAlert
+{
+    animation-name: searshAlertAnim;
+    animation-duration: .6s;
+}
+
+
+@keyframes searshAlertAnim{
+    0%{
+        transform: translate(10px , 0px);
+}
+    20%
+    {
+        transform: translate(-10px , 0px);
+}
+    40%
+    {
+        transform: translate(10px , 0px);
+        
+}
+    60%
+    {
+        transform: translate(-10px , 0px);
+    }
+    80%
+    {
+        transform: translate(10px , 0px);
+    }
+    100%
+    {
+        transform: translate(0px , 0px);
+    }
+}
+
+@media (max-width:992px) {
+
+    .nav__auth__links a:first-of-type
+    {
+        color: var(--white) !important;
+    }
+    .nav__auth__links a:first-of-type:hover
+    {
+        color: var(--main-color2) !important;
+    }
+
+    .nav__auth__links a:last-of-type
+    {
+        background-color: var(--main-color2);
+        color: #000;
+    }
+    .nav__auth__links a:last-of-type:hover
+    {
+        background-color: transparent !important;
+        border:2px solid var(--main-color2) !important;
+        color: var(--main-color2) !important;
+    }
+}
+
+@media (max-width:776px)
+{
+    .navlinksmob,
+    .navlinksmobClose
+    {
+        width: 430px;
+    }
+    .navlinksmob
+    {
+        left: 43%;
+    }
+}
+@media (max-width:554px)
+{
+    .navlinksmob,
+    .navlinksmobClose
+    {
+        width: 100%;
+    }
+    .navlinksmob
+    {
+        left: 0%;
+    }
+
+    .searchBoxDesktop h3
+    {
+        font-size: 30px;
+    }
+    .searchBoxDesktop #searchLink,
+    .searchBoxDesktop .searchLoadingBtn
+    {
+        width: 87% !important;
+    }
+    .searchIconMob svg
+    {
+        font-size: 29px;
+    }
+    .searchBoxDesktop .searchInputField
+    {
+        width: 80% !important;
+    }
+}

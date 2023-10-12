@@ -1,0 +1,118 @@
+
+  
+  .carte {
+    margin-top: -50px;
+  }
+  
+
+  @media (max-width:776px)
+  {
+      .login_mui_box
+      {
+          width: 90% !important;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #sec2 {
+      display: none;
+    }
+  
+    #sec1 {
+      width: 100% !important;
+    }
+  }
+  
+  @media only screen and (max-width:400px) {
+   
+    #sec1 {
+      padding:0 !important;
+    }
+  
+    .MuiInputBase-input {
+      height: 0px;
+  
+    }
+  
+  }
+  
+  @media only screen and (max-width:340px) {
+    .fp {
+      width: 100% !important;
+    }
+  }
+  
+  
+  .di {
+    width: 80%;
+    /* Définir la largeur du div */
+    margin: 0 auto;
+  }
+  
+  #sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fp {
+    align-self: flex-end;
+    font-size: small;
+  }
+  
+  #container {
+    display: flex;
+  
+  }
+  
+  
+  #sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: #ffff;
+    text-align: center;
+  }
+  
+  #sec1 h1{
+      color: var(--main-color1);
+  }
+
+  #sec2 {
+  
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .client {
+    width: 100%;
+    /* Définir la largeur du div */
+    height: 100vh;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  
+  .forgot {
+    margin-left: 350px;
+  
+  }
+  
+  a {
+    color: rgb(0, 0, 255);
+  }
+  
+  
+  
+  #form-div {
+    display: block;
+  }
+  
+  
+  /* .input-container{
+    display: flex;
+    flex-direction: column;
+  } */

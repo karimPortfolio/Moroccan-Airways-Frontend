@@ -1,0 +1,233 @@
+
+/* .reserConfirmBg
+{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#8b01541b 1.3px, #f2f2f9 1.3px);
+    background-size: 26px 26px;
+} */
+
+.reservConfirmIntro
+{
+    background-image: url(../../images/reservationpageintro.jpeg);
+    height: 540px;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    position: relative;
+    top: -70px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.reservConfirmIntro::after
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+    z-index: 4;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius: 60px;
+}
+.reservConfirmIntro h1
+{
+    background: -webkit-linear-gradient(315deg,#FFFF 20%,#8b0153);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    z-index: 10;
+}
+
+.reservConfirmIntro h1 span{
+    background: -webkit-linear-gradient(315deg,#FFFF 15%,#67003e 130%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.passngersDetails h1
+{
+    color: var(--main-color1);
+}
+
+.ReservConfirmDetails form,
+.ReservConfirmDetails2 form
+{
+    width: 70%;
+}
+
+.ReservConfirmDetails form input,
+.ReservConfirmDetails form select
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.ReservConfirmDetails2 form input,
+.ReservConfirmDetails2 form select
+{
+    width: 450px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.css-1yt7yx7-MuiLoadingButton-loadingIndicator
+{
+    color: #FFF !important;
+}
+
+.selectExtras .selectExtrasP1,
+.selectExtras .selectExtrasP2
+{
+     width: 55%;
+     transition: var(--transition);
+}
+
+.selectExtras .selectExtrasP1:hover,
+.selectExtras .selectExtrasP2:hover
+{
+    box-shadow: 0px 0px 9px 0px #0000002d !important;
+    transform: translate(0 , -5px);
+    cursor: pointer;
+}
+
+.selectExtrasP1 div
+{
+    transition: var(--transition);
+}
+
+/* res payments confirmation */
+
+.resPaymentsForm .cardNumberInput
+{
+    padding-left: 50px;
+}
+
+.resPaymentsForm form input
+{
+    height: 50px;
+    border-radius: 4px !important;
+}
+
+.resPaymentsForm img
+{
+    width: 29px;
+    height: 22px;
+    position: relative;
+    left: 12px;
+    top: 30px;
+}
+
+.totCalcPay
+{
+    width: 100%;
+    padding: 30px;
+    background-color: #eee;
+}
+
+.totCalcPay p
+{
+    font-size: 13px;
+}
+
+
+.totCalcPay .totPrice span
+{
+    /* color: var(--main-color1); */
+}
+
+@media (max-width:992px)
+{
+    .ReservConfirmDetails form input,
+    .ReservConfirmDetails form select,
+    .ReservConfirmDetails2 form input,
+    .ReservConfirmDetails2 form select
+    {
+        width: 100%;
+    }
+
+    .reservConfirmIntro h1
+    {
+        font-size: 60px;
+    }
+    .selectExtras .selectExtrasP1,
+    .selectExtras .selectExtrasP2
+    {
+         width: 80%;
+    }
+
+    .totCalcPay
+    {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:776px)
+{
+    .reservConfirmIntro h1
+    {
+        margin-bottom: 110px;
+    }
+    .reservConfirmIntro
+    {
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+    .reservConfirmIntro::after
+    {
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+    .selectExtras .selectExtrasP1,
+    .selectExtras .selectExtrasP2
+    {
+         width: 85%;
+    }
+
+    .totCalcPay
+    {
+        width: 85%;
+    }
+
+}
+
+@media (max-width:665px)
+{
+    .reservConfirmIntro h1
+    {
+        font-size: 40px;
+        margin-bottom: 110px;
+    }
+}
+
+@media (max-width:575px)
+{
+    .selectExtras .selectExtrasP1,
+    .selectExtras .selectExtrasP2
+    {
+         width: 95%;
+    }
+
+    .totCalcPay
+    {
+        width: 95%;
+    }
+}
+
+
+@media (max-width:450px)
+{
+    .ReservConfirmDetails form,
+    .ReservConfirmDetails2 form
+    {
+        width: 90%;
+    }
+
+}

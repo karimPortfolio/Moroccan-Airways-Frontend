@@ -1,0 +1,109 @@
+
+
+
+
+
+#divAjcontact {
+  background-image: url(../../images/signupBg.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+#divAjcontact::after
+{
+  content: '';
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .3;
+}
+
+#div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 400;
+}
+
+
+
+#div img
+{
+  width: 70px;
+  height: 50px;
+}
+
+#titre {
+  color: #ac0068;
+}
+
+
+
+
+@media (min-width: 601px) {
+  #divAjcontact {
+    padding-left: 80px;
+    
+  }
+
+  #div {
+    padding: 2rem;
+  }
+
+  #titre {
+    font-size: 40px;
+  }
+
+  .input1 {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  #divAjcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #div {
+    padding: 1rem;
+  }
+
+  #titre {
+    font-size: 30px;
+  }
+
+  .input1 {
+    width: 320px;
+  }
+
+}
+
+@media (max-width: 440px) {
+
+  #div {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+}
+}
+@media (max-width: 350px) {
+
+  .input1 {
+    width: 290px;
+  }
+
+}
