@@ -29,11 +29,12 @@ A personalized space to manage your bookings and notifications.
 
 To get this project up and running, follow these steps:
 1. Clone the repository using this command in your Terminal or any command line interface:
+   
    git clone https://github.com/KarimPortfolio/Moroccan-Airways-Frontend/
-2. Navigate to the Project Directory using this command: cd project-name
-3. Install Dependencies using this command: "npm install" or "yarn install" according to your package manager.
-4. Run the Development Server using this command: "npm start" or "yarn start".
-5. Access the App: Open your web browser and navigate to http://localhost:3000 or the URL provided by the development server. You should see your the website running.
+3. Navigate to the Project Directory using this command: cd project-name
+4. Install Dependencies using this command: "npm install" or "yarn install" according to your package manager.
+5. Run the Development Server using this command: "npm start" or "yarn start".
+6. Access the App: Open your web browser and navigate to http://localhost:3000 or the URL provided by the development server. You should see your the website running.
 
 
 ## Usage
