@@ -45,10 +45,22 @@ export default function ContactContext(props) {
          }    
     }
 
+   const values = { 
+                   chatBoxOpen ,
+                   handleChatOpen ,
+                   userMessage ,
+                   setUserMessage ,
+                   chatMessages,
+                   handleUserMessage ,
+                   loadingChat ,
+                   messages ,
+                   handleScroll,
+                   writingLoad,
+                   writeLoadingMsg
+    };
+    
   return (
-    <myContactChat.Provider value={{ chatBoxOpen , handleChatOpen , userMessage , setUserMessage ,chatMessages,
-        handleUserMessage , loadingChat , messages , handleScroll,writingLoad,writeLoadingMsg}}>
-          
+    <myContactChat.Provider value={values}>
         {props.children}
     </myContactChat.Provider>
   )
