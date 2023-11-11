@@ -179,10 +179,7 @@ export default function ReservationContext(props) {
       setDateExpirYear(testCardYear);
   }
 
-
-  return (
-    <myReservationContext.Provider
-      value={{
+  const values = {
         title, setTitle, fullName, setFullName, lastName,
         setLastName, nationality, setNationality, dateBirth, setDateBirth,
         passport, setPassport, countryResidence, setCountryResidence,
@@ -196,7 +193,10 @@ export default function ReservationContext(props) {
         dateExpirMonth, dateExpirYear,handlePayments, checkCard, reservationStatus, totNumPassengers,
         setTotNumPassengers,handleCancelRes, cancellationMsg, handleClose, open, handleClick,
         generateTestCreditCard
-      }}>
+  }
+
+  return (
+    <myReservationContext.Provider value={values} > 
       {props.children}
     </myReservationContext.Provider>
   )
