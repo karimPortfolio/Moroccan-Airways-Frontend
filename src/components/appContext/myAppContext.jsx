@@ -50,14 +50,24 @@ function MyAppContext(props) {
         {
             const flights_url = "https://moroccan-flights.000webhostapp.com/api/flights";
             axios.get(flights_url)
-             .then(res => setAllReservations(res.data))
+             .then(res => {
+                 if (res.ok)
+                 {
+                   setAllReservations(res.data);
+                 }
+             })
         }
 
         if (fromInput !== '' && toInput !== '' && tripInput !== '' && dateDepa !== 'dd/mm/yyyy' && parseInt(passengersAdultes) > 0)
         {
            const flights_url = "https://moroccan-flights.000webhostapp.com/api/flights";
            axios.get(flights_url)
-            .then(res => setAllReservations(res.data))
+            .then(res => {
+                if (res.ok)
+                {
+                    setAllReservations(res.data);
+                }
+            })
         }
   
      },[searchedCity , fromInput ,flightClass]);
@@ -87,8 +97,12 @@ function MyAppContext(props) {
           console.log(...userData);
           const url3 = 'https://moroccan-flights.000webhostapp.com/api/reservations/show';
           axios.post(url3 , userData)
-            .then(res => setFlightFound(res.data))
-            .then(res => console.log(res.data))
+          .then(res => {
+               if (res.ok)
+               {
+                   setFlightFound(res.data);
+               }
+          })
           .catch(err => console.log(err))
           setTimeout( () => {
                navigate('/flightstatus' , {replace:true} );
