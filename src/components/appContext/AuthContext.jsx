@@ -170,9 +170,7 @@ export default function AuthContext(props) {
             })
     }, [])
 
-
-    return (
-        <myAuthContext.Provider value={{
+    const values = {
             messageRegister, setMessageRegister, name,
             setName, email, setEmail, password, emptyInputs,
             setPassword, dataLogin, setDataLogin, userReserv,
@@ -181,8 +179,10 @@ export default function AuthContext(props) {
             logedUserEmail, setLogedUserEmail, setIsAuthincated,
             isAuthincated, handleSubmitLogin, handleSubmitRegister, active,
             handleChangeActivity, expireMsg, buttonExpire, numBooks, totalMoneySpends
-        }}>
+    }
 
+    return (
+        <myAuthContext.Provider value={values}>
             {props.children}
         </myAuthContext.Provider>
     )
