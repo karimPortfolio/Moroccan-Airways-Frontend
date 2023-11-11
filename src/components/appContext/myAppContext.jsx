@@ -123,18 +123,21 @@ function MyAppContext(props) {
            setAllMatchedCitys(matchedRes);
      }
 
+  const values = {
+          handleNavOpen , navOpen , setNavOpen ,
+          searchedCity ,setSearchedCity , allMatchedCitys,setAllMatchedCitys ,
+          allReservations ,setAllReservations, loading,fromInput , setFromInput
+          ,toInput , setToInput, dateDepa , setDateDepa,dateRetur , setDateRetur,
+          passengersAdultes , setPassengersAdultes,passengersChild, setPassengersChild,
+          flightClass, setFlightClass,tripInput , setTripInput ,matchedResNeeds ,
+          setFlightStatEmail, setFlightStatName,flightStatus,checkFlightStatu ,
+          filterFlights,flightFound,
+  }
+
   
   return (
 
-        <flightContext.Provider value = {{handleNavOpen , navOpen , setNavOpen ,
-         searchedCity ,setSearchedCity , allMatchedCitys,setAllMatchedCitys ,
-          allReservations ,setAllReservations, loading,fromInput , setFromInput,toInput , setToInput,
-          dateDepa , setDateDepa,dateRetur , setDateRetur,passengersAdultes , 
-          setPassengersAdultes,passengersChild, setPassengersChild,flightClass,
-           setFlightClass,tripInput , setTripInput ,matchedResNeeds , setFlightStatEmail,
-           setFlightStatName,flightStatus,checkFlightStatu ,filterFlights,flightFound,
-
-           }}>
+        <flightContext.Provider value = {values}>
             {props.children}
         </flightContext.Provider>
   )
