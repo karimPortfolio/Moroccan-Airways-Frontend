@@ -1,7 +1,7 @@
-<p align="center"><a href="https://moroccan-airways.surge.sh/" target="_blank"><img src="https://moroccan-airways.surge.sh/static/media/myFlightLogo.d0256c10208deb13f8a1.png" width="200" alt="Moroccan Airways Logo"></a></p>
+<p align="center"><a href="https://moroccan-airways-frontend.vercel.app/signup" target="_blank"><img src="https://moroccan-airways.surge.sh/static/media/myFlightLogo.d0256c10208deb13f8a1.png" width="200" alt="Moroccan Airways Logo"></a></p>
 
 <p align="center">
-<a href="https://moroccan-airways.surge.sh/" >Visit website</a>
+<a href="https://moroccan-airways-frontend.vercel.app/signup" >Visit website</a>
 </p>
 
 ## About Moroccan Airways
